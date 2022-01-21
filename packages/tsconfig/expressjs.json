@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Express.js",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "exclude": ["node_modules"]
+}

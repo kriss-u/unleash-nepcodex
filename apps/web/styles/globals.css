@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased
+    bg-gradient-to-br
+    bg-no-repeat
+    bg-fixed
+    from-[#73b9d0]
+    via-[#97d9e180]
+    to-[#d9afd9ff];
+  }
+}

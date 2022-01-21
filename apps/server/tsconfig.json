@@ -1,0 +1,9 @@
+{
+  "extends": "tsconfig/expressjs.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
