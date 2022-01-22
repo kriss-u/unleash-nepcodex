@@ -30,8 +30,14 @@
       "lint": {
         "outputs": []
       },
+      "unleash-server#start": {},
+      "unleash-proxy#start": {},
       "dev": {
-        "cache": false
+        "cache": false,
+        "dependsOn": [
+          "^unleash-proxy#start",
+          "^unleash-server#start"
+        ]
       }
     }
   },
