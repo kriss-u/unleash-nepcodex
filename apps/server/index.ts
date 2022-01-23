@@ -13,9 +13,9 @@ unleash.on("synchronized", () => {
 import toolsRoutes from "./routes/toolsRoutes";
 
 const app = express();
-const PORT = +process.env.PORT || 8000;
+app.use(cors());
 
-app.use(cors({ origin: "localhost:3000" }));
+const PORT = +process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 

@@ -1,2 +1,3 @@
-import "./styles/globals.css";
 export * from "./src/Button";
+export * from "./src/Card";
+export * from "./src/TextInput";

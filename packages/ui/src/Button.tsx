@@ -1,5 +1,14 @@
-import { ComponentProps } from "react";
+import { ButtonHTMLAttributes } from "react";
 
-export const Button = (props: ComponentProps<"button">) => {
-  return <button className="bg-blue-400 rounded p-2">{props.children}</button>;
+export const Button = (props: ButtonHTMLAttributes<HTMLButtonElement>) => {
+  return (
+    <button
+      className={`bg-purple-400 hover:bg-purple-500 rounded p-2 text-white ${
+        props.className || ""
+      }`}
+      onClick={props.onClick}
+    >
+      {props.children}
+    </button>
+  );
 };
